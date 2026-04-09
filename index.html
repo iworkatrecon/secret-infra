@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECON 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+    <svg class="noise" xmlns="http://www.w3.org/2000/svg">
+      <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" stitchTiles="stitch" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noiseFilter)"></rect>
+    </svg>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">Recon<span>2026</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Main</a>
+          <a href="team.html">Team</a>
+          <a href="about.html">About Us</a>
+          <a href="villages.html">Villages</a>
+          <a href="https://luma.com/v933kdr1" target="_blank" rel="noreferrer">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hero">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">Signal Layer</div>
+            <h1>Recon 2026</h1>
+            <p class="subtitle">
+              A next-gen recon interface for mission-focused teams. Build intelligence maps, coordinate village-level observations, and
+              deploy strategy with precision.
+            </p>
+            <div class="hero-stats">
+              <article class="stat">
+                <strong>24/7</strong>
+                <span>Ops Coverage</span>
+              </article>
+              <article class="stat">
+                <strong>42</strong>
+                <span>Field Nodes</span>
+              </article>
+              <article class="stat">
+                <strong>2026</strong>
+                <span>Active Cycle</span>
+              </article>
+            </div>
+          </div>
+          <aside class="hero-visual reveal">
+            <div class="eyebrow">Live Matrix</div>
+            <h2>Data Pulse</h2>
+            <p>
+              Adaptive telemetry overlays let operators track movement and strategic anomalies in real time.
+            </p>
+            <div class="scan"></div>
+          </aside>
+        </section>
+
+        <section class="grid-section">
+          <article class="card reveal">
+            <small>Phase 01</small>
+            <h3>Terrain Intelligence</h3>
+            <p>Collect local signals, route metadata, and pattern shifts before strategic deployment.</p>
+          </article>
+          <article class="card reveal">
+            <small>Phase 02</small>
+            <h3>Team Synchronization</h3>
+            <p>Align specialists with region-specific goals and cleanly handoff mission threads.</p>
+          </article>
+          <article class="card reveal">
+            <small>Phase 03</small>
+            <h3>Village Coordination</h3>
+            <p>Convert raw reconnaissance into practical actions at the village operations layer.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Recon 2026 // premium tactical interface</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
